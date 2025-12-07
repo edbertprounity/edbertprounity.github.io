@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Place</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        header, footer { 
+            padding: 15px; 
+            text-align: center; 
+        }
+        
+        .slide-up {
+            animation: animatezoom 0.8s;
+        }
+
+        .card p{
+            font-style: italic;
+        }
+
+        @keyframes animatezoom {
+            from { transform: translateY(50px); opacity: 0; } 
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .gallery{
+            width: 30%; 
+            border-radius: 4px; 
+            border: 1px solid #333;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 12px;
+            transition: 0.2s;
+        }
+
+        .gallery:hover{
+            transform: scale(1.1) translateY(-15px);
+            border: 2px solid #39ff14;
+        }
+
+        @media screen and (max-width: 1000px){
+            .gallery{
+                width: 90vw;
+                max-width: 500px;   
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="sticky-nav">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fav.html">Favourite Things</a>
+            <a class="current-nav" href="places.html">Favourite Place</a>
+        </nav>
+    </header>
+
+    <div class="slide-up">
+        
+        <section class="container" style="margin-top: 15px; position: relative; background: #1a1a1a; z-index: 10;"> 
+            <h2>My Favourite Place: Pattaya, Thailand</h2> 
+            <div class="card" style="border: none; padding: 0;">
+                <p>Pattaya is a city in Eastern Thailand. Pattaya is well-known as its long, wide beaches, bustling nightlife and rich cultural diversity. Pattaya is a city that has cozy and chill atmosphere with friendly faces. In short, Pattaya is a suitable tourist destination for people who wants to experience slow life pace and windy beaches. </p>
+                <p>Personally, I visited Pattaya twice. My first time visiting Pattaya was on 2023. I went there for an international mathematics competition (TIMO) with my friends and our legal guardians. The second time I visit Pattaya was on a vacation with my family members. We visited the beach in Pattaya, as well as tasting the local cuisine. </p>
+                <p>The reason I love Pattaya is the combination of slow-paced vibes and beautiful natural scene, makes it perfect for tourist to have fun there. We have been treated with the enthusiast hospitality provided by people there. Moreover, the beach there was perfect, with clear water and white sand. </p>
+                <p>Subsequently, Pattaya is well-known for its vibrant nightlife. There are a lot of night markets and shows, offering a diverse range of entertainment. Furthermore, Pattaya foods are not only delicious, but also cheap, making it affordable for people who likes to try Thailand cuisines. Starting from main dishes such as Tom Yum till appetizers such as Mango Sticky Rice, offering various types of delicacy foods. </p>
+                <p>In short, I love Pattaya not only because of <span style="color: #39ff14; font-weight: bold;">the memories</span> there, but also because of its <span style="color: #39ff14; font-weight: bold;">cozy atmosphere, friendly hospitality, vibrant nightlife, as well as tasty foods.</span></p>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="https://www.tourismthailand.org/Destinations/Provinces/Pattaya/469" target="_blank"><button class="btn-primary">Visit Official Tourism Guide</button></a>
+                </div>
+            </div>
+        </section>
+
+        <center>
+            <section class="container" >
+                <h3>Photo Gallery</h3>
+                <div class="card-container">
+                    <center>
+                        <img src="images/Pattaya_1.jpg" class="gallery">
+                        <img src="images/pattaya_2.jpg" class="gallery">
+                        <img src="images/pattaya_3.jpg" class="gallery">
+                    </center>
+                </div>
+            </section>
+        </center>
+
+    </div>
+
+    <footer>
+        <p style="color: #888; letter-spacing: 2px;">&copy; 2025 Edbert Wisely - Places Page</p> 
+    </footer>
+
+</body>
+</html>

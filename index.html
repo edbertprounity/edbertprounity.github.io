@@ -3,66 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Project</title>
+    <title>My Portfolio - Home</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            
+        }
+
+        header, footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section-intro { 
+            margin-top: 5px; 
+            margin-bottom: 25px; 
+            font-size: 1.05rem; 
+        }
+
+        .slide-up {
+            animation: animatezoom 0.8s;
+        }
+
+        #back-to-top-btn{
+            max-width: 1260px;
+        }
+
+        @keyframes animatezoom {
+            from { transform: scale(0.9); opacity: 0; } 
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        
+    </style>
 </head>
-<body>
-    <center>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th colspan="3">My Group Member</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <center>
-                                <h1>Wilson Raffiel</h1>
-                                <img width="100px" src="wilson.jpeg">
-                            </center>
-                            <h2>About Wilson</h2>
-                            <ol>
-                                <li>smart</li>
-                                <li>profesional</li>
-                                <li>consistences</li>
-                                <li><a href="wilson.html">Click to know more</a></li>
-                            </ol>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <center>
-                                <h1>Anya Priscilla</h1>
-                                <img width="100px" src="anya.jpeg">
-                            </center>
-                            <h2>About Anya</h2>
-                            <ol>
-                                <li>painter</li>   
-                                <li>dancer</li>
-                                <li>joy</li>
-                                <li><a href="anya.html">Click to know more</a></li>
-                            </ol>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <center>
-                                <h1>Edbert Wisely</h1>
-                                <img width="100px" src="edbert.jpeg">
-                            </center>
-                            <h2>About Edbert</h2>
-                            <ol>
-                                <li>Most handsome guy in the earth </li>
-                                <li>Most smart guy in the earth</li>
-                                <li>Most wealth guy in the earth</li>
-                                <li><a href="edbert.html">Click to know more</a></li>
-                            </ol>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-      </table>
-    </center>
+<body id="top">
+
+    <header class="sticky-nav" >
+        <nav>
+            <a class="current-nav" href="index.html">Home</a>
+            <a href="fav.html">Favourite Things</a>
+            <a href="places.html">Favourite Place</a>
+        </nav>
+    </header>
+    
+    <div class="slide-up">
+        
+        <div class="id-card-wrapper">
+            <div class="tech-id-card">
+                <div class="photo-frame">
+                    <img src="images/profile_picture.jpg">
+                </div>
+                <div class="id-info">
+                    <div class="text-header">STUDENT IDENTIFICATION RECORD</div>
+                    
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>:</td>
+                            <td>Edbert Wisely</td>
+                        </tr>
+                        <tr>
+                            <th>Student ID</th>
+                            <td>:</td>
+                            <td>14722262</td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td>:</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <th>Dept</th>
+                            <td>:</td>
+                            <td>Information Technology</td>
+                        </tr>
+                        <tr>
+                            <th>D.O.B</th>
+                            <td>:</td>
+                            <td>2007-11-04</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+
+        <section class="container">
+            <div class="card">
+                <h2>Inspiration</h2>
+                <div class="content-box">
+                    <div style="flex: 1;">
+                        <blockquote style="font-style: italic; border-left: 2px solid #39ff14; padding-left: 15px;">
+                            "The best investment you can make is in yourself."
+                            <br><br>
+                            <cite style="color: #39ff14; font-weight: bold;">- Warren Buffet</cite>
+                        </blockquote>
+                    </div>
+                    <div style=" flex: 1; text-align: center;">
+                        <img src="images/warren_buffet.gif"  width="300" style="border-radius: 4px; border: 1px solid #333;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <h2>Who Am I?</h2>
+                <p>I am <span style="color: #39ff14; font-weight: bold;">Chinese-Indonesian (Chindo)</span>. I was born and raised in Medan, Indonesia. Although growing up surrounded by Indonesia culture, I also practice Chinese traditions such as speaking Hokkien and celebrating Chinese New Year.</p>
+                <p>A landmark that represent my country of birth is <a href="https://borobudurpark.com/en/borobudur-temple/" target="_blank">Borobudur Temple</a>.</p>
+                
+                <div class="contact-box" style="margin-top: 20px;">
+                    <div class="text-header" style="margin-bottom: 20px;"><center>CONNECT WITH ME</center></div>
+                    <a href="mailto:Edbert.Wisely@student.uts.edu.au">
+                        <button class="btn-primary">Send me a UTS Email</button>
+                    </a>
+                    
+                    <div class="social-links-row">
+                        <a href="https://instagram.com/edbert_wisely" target="_blank">
+                            <button class="btn-social">Instagram</button>
+                        </a>
+                        <a href="https://tiktok.com/@edbert_wisely" target="_blank">
+                            <button class="btn-social">Tiktok</button>
+                        </a>
+                        
+                        <a href="https://youtube.com/@edbert_wisely" target="_blank">
+                            <button class="btn-social">
+                                YouTube
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="container">
+            <h2>Education & Employment</h2>
+            <div class="card-container">
+                <div class="interactive-card">
+                    <h3>Education</h3>
+                    <div class="details">
+                        <p><strong>UTS College</strong></p>
+                        <p>Diploma of Information Technology</p>
+                        <p style="opacity: 0.7;">2025 - Present</p>
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Carnegie School</strong></p>
+                        <p>Senior High School Level </p>
+                        <p style="opacity: 0.7;">2022 - 2025</p>
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Methodist 3</strong></p>
+                        <p>Junior High School Level</p>
+                        <p style="opacity: 0.7;">2019 - 2022</p>
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Methodist 3</strong></p>
+                        <p>Junior High School Level</p>
+                        <p style="opacity: 0.7;">2013 - 2019</p>
+                    </div>
+                </div>
+                <div class="interactive-card">
+                    <h3>Work Experience</h3>
+                    <div class="details">
+                        <p><strong>Head of Education, Student Council</strong> (2022 – 2023)</p>
+                        <ul class="experience-list">
+                            <li>Collaborated with teammates to organize school annual events, focusing on educational initiatives.</li>
+                            <li>Founded the "Laugh and Learn" program to support students' academic progress.</li>
+                        </ul>
+                        
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Tutor (Self-Employed)</strong> (2023 – Present)</p>
+                        <ul class="experience-list">
+                            <li>Teach science subjects to junior and senior high school students, ensuring lessons to match with individual learning styles.</li>
+                        </ul>
+
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Founder, ETOZ Organization</strong> (2024 – Present)</p>
+                        <ul class="experience-list">
+                            <li>Established an organization merging technology and education to create interactive study environments.</li>
+                        </ul>
+                        
+                        <hr style="border-color: #333; margin: 10px 0;">
+                        <p><strong>Domino's Delivery Driver </strong> (2025 - Present)</p>
+                        <ul class="experience-list">
+                            <li>Delivering foods at Domino's Pizza in time, providing excellent services to customers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <h2>My Daily Life (Hobbies)</h2>
+                <div class="content-box">
+                    <div class="text-box">
+                        <p>My hobby is to create mini application that can solve real world problem. The above image shows a program that is used for smart class application with AI features, and physical devices access controls. In addition, I have ever created Arduino project for water filtration project. Furthermore, I'm currently developing UTS community project. Developing mini apps to solve a real world problem is definitely my hobby.</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="images/Hobbies.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card">
+                <h2>Fun Facts About Me</h2>
+                <p>I love to try everything, especially when it comes to challenges. Personally, I think challenges have filled up my entire life. I've joined several competitions from math and tech to even speech and chess competitions. In addition, I also learnt how to speak in different languages. Those experiences not just simply enrich my life but instead they are a part of me.</p>
+                <p>Education has been an important aspect in my life. Although education is not the only way to achieve success, I always believe that education is the foundation for people to change their lives. Furthermore, I love technologies, that's why I'm interested in edu-tech field. </p>
+                <p>I like to question most of the things. I am eagerly to know what’s happening behind every working system. Personally, I love to see things in more than one perspective. I’m happy to train my cognitive and critical thinking with those things. </p>
+                <p>I always believe that work with what you have and improve it instead of waiting for perfection. For instance, I’ve built up a small organization named “ETOZ” with the purpose to help students in education with technologies. I love the quote from Warren Buffet “The best investment you can make is in yourself”, which perfectly aligns with what my perspective. </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Skills Spotlight</h2>
+            <div class="card-container">
+                <div class="interactive-card">
+                    <h3>Skills I Have Learned</h3>
+                    <ul>
+                        <li><strong>Teaching and tutoring</strong></li>
+                        <p>I always believe education as foundation towards success, so I am enthusiast in teaching people on different types of knowledge. I've ever taught people for Math and Science subjects, tutored people in solving coding problem and helped people in learning language. </p>
+                        <li><strong>Coding Skill</strong></li>
+                        <p>I knew coding on my year seven. One third of my life has been surrounded by coding. I start with Java and move to Python and web dev. During this seven years period, I've tried a lot of things such as Arduino (Robotic). I'm passionate in coding, aiming to solve real world problems with technologies. I wish to use this skill to enhance public's life quality.</p>
+                        <li><strong>Multitasking</strong></li>
+                        <p>Love to try everything makes my life moves fast, thereby multitasking is an essential skill to address this fast-paced life. I can freely switch between different tasks at the same time, while ensuring the quality of my works. Multitasking increase my productivity so that I can spend more time to try more and more things.</p>
+                        <li><strong>Leadership and Collaboration</strong></li>
+                        <p>I've frequently lead several events such as Kathina and Waisak devotional services. In addition, I am actively participated in team collaboration in various school events such as becoming an MC in YAWP (You're my wonderful parents) event. I personally believe that one requires team and collaboration to solve problems, not relying on solo-fighter mode.</p>
+                    </ul>
+                    <center><img src="images/coding2.png" style="width: 30vw; min-width: 300px;"></center>
+                </div>
+
+                <div class="interactive-card">
+                    <h3>Skills I Am Pursuing</h3>
+                    <ul>
+                        <li><strong>Enterpreneur skills</strong></li>
+                        <p>I am passionate in building my own company, where enterpreneur skill is compulsory. I am learning on how to plan, launch, and manage small-scale projects. In the future, I wish I can develop critical thinking to help me better take decision for a company. Turning creative ideas into practical application is my future goal.</p>
+                        <li><strong>Investing skills</strong></li>
+                        <p>To achieve financial freedom, investment is mandatory. I'm trying to learn how to apply the most suitable strategies in investing. I would love to understand human's behaviour to market perspective, as well as macro and micro economy impacts on market behaviour. I wish I can learn more investing skill through online resources or financial books.</p>
+                        <li><strong>Content Creation</strong></li>
+                        <p>In this modern era, digital identity is accounting more attention every year. In able to well presenting myself, creative and high quality of content plays a crucial role. So, content creation is the skill that I am currently pursuing. I am learning color grading, content structuring, and content delivering. I wish to master this skill to build up a strong digital identity for myself.</p>
+                        <li><strong>AI/ML Development</strong></li>
+                        <p>As the hottest topic discussion in these few years, AI (Artificial Intelligent) and ML (Machine Learning) has drawn my attention. I believe that future belongs to people who can use AI as their tools. Therefore, I am interested in learning how to develop, train, and implement an AI model.</p>
+                    </ul>
+                    <center><img src="images/content_creation.png" style="width: 30vw; min-width: 300px;"></center>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="#top"><button class="btn-primary" id="back-to-top-btn">Back to top</button></a>
+        <p style="color: #888; font-size: 12px; margin-top: 20px;">&copy; 2025 Edbert Wisely - IWBS001 Assignment 2</p>
+    </footer>
+
 </body>
 </html>

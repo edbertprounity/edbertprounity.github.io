@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourites - Things & Activities</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        header, footer { 
+            text-align: center; 
+            padding: 15px; 
+        }
+
+        #fav-thing-heading { 
+            text-shadow: 0 0 10px #39ff14; 
+            letter-spacing: 2px; 
+        }
+
+        .card h2 {
+            text-align: center; 
+        }
+        
+        .fade-in-section {
+            animation: fading 1.5s ease-in;
+        }
+        @keyframes fading {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="sticky-nav">
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="current-nav" href="fav.html">Favourite Things</a>
+            <a href="places.html">Favourite Place</a>
+        </nav>
+    </header>
+
+    <div class="fade-in-section">
+        
+        <section class="container">
+            <div class="card">
+                <h2 id="fav-thing-heading">My Favourite Thing: Laptop</h2>
+                <div class="content-box">
+                    <div class="text-box">
+                        <p>My favorite thing is my laptop, which is HP Victus 16. This is a present bought by my father for me. I love this laptop because with its outstanding performance, I can increase my productivity. This laptop has equipped with processor <span style="color: #39ff14; font-weight: bold;">Ryzen 7 series 8</span> and VGA card <span style="color: #39ff14; font-weight: bold;">RTX 4060</span>, which definitely enhance the performance. In short, this laptop doesn’t only come with high-performance specs, but it’s also a special gift from my parents to support my college life. </p>
+                        <p>I use my laptop everyday from entertainment, study even work. I use the laptop for watching Youtube video, listening to podcast, etc. This laptop has supported me through each section of my life. In addition, I use this laptop to communicate with others, such as messaging friends, joining video conference, etc. Most importantly, this laptop is a powerful tool that help me to acquire a new skill. This laptop serves as a media for me to access knowledge from numerous websites, following online tutorials and taking courses on platforms like Coursera or Udemy. </p>
+                        <p>This laptop comes with a fancy outlook, with a solid black colored body and RGB light keyboard. In addition, 16.1 inches screen ad 165Hz refresh rate makes the user experience to this laptop was undefeatable. Although this is a gaming laptop, I don’t use it as gaming instead I use it for debugging heavy codes and programs. </p>
+                        <p>Overall, this laptop is not just a device; it is a meaningful gift and a dependable companion that continuously supports my academic journey and personal growth.</p>
+                        <a href="https://www.hp.com/au-en/shop/victus-gaming-laptop-16-r0153tx-91v91par.html"target="_blank"><button class="btn-primary" >View Official Website</button></a>
+                    </div>
+                    <div class="img-box">
+                        <img src="images/laptop.jpg">
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <div style="height: 2px; background: linear-gradient(90deg, #1a1a1a, #39ff14, #1a1a1a); margin: 40px 0;"></div>
+
+        <section class="container">
+            <div class="card">
+                <h2>My Favourite Activity: Coding</h2>
+                <div class="content-box">
+                    <div class="img-box" style="display: flex; justify-content: center; align-items: center;">
+                        <div class=" flip-card">
+                             <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/coding.png" autoplay></img>
+                                </div>
+                                <div class="flip-card-back">
+                                    <video src="images/video.mp4" controls></video>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="text-box">
+                        <p>Coding has become inseparable part of my life. For about one third of my life, roughly six years, I have been dealing with programs. I wrote my very first line of code in year seven, inspired by the movie, The Matrix. Something about seeing green line code through a computer screen has drawn my attention and curiosity. I started to experiment with program, writing my first line of code "Hello, World!". This curiosity quickly turned into passion. As the more I dived into the world of technology, I started to reliaze coding was not just a simple thing instead a powerful tool that we can use to solve real world problem.</p>
+                        <p>Throughout this period of time, I have experimented with various type and field of technology, starting from Java, Python until Arduino. Although the journey was not easy, the presence of a friend makes coding more interesting to me, as we can discuss anything at anytime. The memories of writing, debugging and handling error with my friend makes this hobby more meaningful to me. </p>
+                        <p>I started to solve real world problem such as inefficient control of classes in my high school. Combining python and Arduino, I am able to create SmartClass. I started to reliaze that this is not just simply a hobby but also something that I can use to propose a solution to an ineffective system. When I saw people can do their activities more effectively and efficiently with my programs, it creates sense of proud inside of me. In summary, although programming is not an easy task, it contains with endless memories and sense of proud when people are using the programs. </p>
+                        <a href="https://www.computerscience.org/resources/what-is-coding-used-for/" target="_blank"><button class="btn-primary">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p style="color: #888; font-style: italic;">&copy; 2025 Edbert Wisely - Hobbies Page</p> 
+    </footer>
+
+</body>
+</html>
