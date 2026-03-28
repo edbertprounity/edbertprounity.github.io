@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & META TAGS -->
+    <title>3L Multicare | Sydney Aged Care & NDIS Support | 三生护爱</title>
+    <meta name="description" content="3L Multicare Pty Ltd provides expert NDIS support and My Aged Care services in Sydney. Specializing in home care, nursing, and government funding applications.">
+    <meta name="keywords" content="3L Multicare, Aged Care Sydney, NDIS Support Sydney, My Aged Care Application, Home Care Hurstville, Chinese Aged Care Sydney">
+    <meta name="author" content="3L Multicare Pty Ltd">
+    
+    <!-- OPEN GRAPH (Social Media Sharing) -->
+    <meta property="og:title" content="3L Multicare | Sydney Aged Care & NDIS Support">
+    <meta property="og:description" content="Professional home care and NDIS support services in Sydney. Living Well At Home.">
+    <meta property="og:type" content="website">
+    
+    <!-- STRUCTURED DATA (Local Business Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "3L Multicare Pty Ltd",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 / 45 Forest Road",
+        "addressLocality": "Hurstville",
+        "addressRegion": "NSW",
+        "postalCode": "2220",
+        "addressCountry": "AU"
+      },
+      "telephone": "+61451572688",
+      "description": "Specializing in NDIS and My Aged Care support for the Sydney community.",
+      "url": "https://www.3lmulticare.com.au"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+        
+        :root {
+            --brand-navy: #0F172A;
+            --brand-gold: #C2A35D;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif; 
+            color: var(--brand-navy);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #C2A35D 0%, #A68A45 100%);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .section-tag {
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.7rem;
+            color: var(--brand-gold);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--brand-gold);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased bg-white">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl font-black font-bold tracking-tight">3L MULTICARE  Pty Ltd</span>
+                <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">三生护爱 - 居家养老与护理</span>
+            </div>
+            
+            <div class="hidden lg:flex gap-8 text-[10px] font-bold tracking-widest uppercase">
+                <a href="#services" class="hover:text-amber-600 transition">Services</a>
+                <a href="#location" class="hover:text-amber-600 transition">Contact</a>
+            </div>
+
+            <a href="tel:0451572688" class="bg-slate-900 text-white px-5 py-2.5 rounded-full flex items-center gap-3 hover:bg-slate-800 transition">
+                <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+                <span class="text-xs font-bold">0451 572 688</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-2.5 rounded-full mb-8 shadow-2xl">
+                    <i data-lucide="map-pin" class="text-amber-500 w-5 h-5"></i>
+                    <span class="text-xl md:text-2xl font-black tracking-tighter uppercase">Sydney, NSW</span>
+                    <span class="border-l border-white/20 pl-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Only</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900 leading-none">
+                    Living Well <br>
+                    <span class="text-amber-600 italic">At Home.</span>
+                </h1>
+                
+                <p class="text-2xl md:text-3xl font-serif text-slate-700 mb-10">
+                    三生护爱，伴您安享晚年
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="tel:0451572688" class="gold-gradient text-white px-12 py-5 rounded-full font-bold shadow-2xl hover:scale-105 transition-all text-center text-lg">
+                        Free Consultation | 免费咨询
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-50 -z-10 skew-x-[-12deg] translate-x-24 border-l border-slate-200"></div>
+    </section>
+
+
+	 <!-- Quick Services Info -->
+    <section class="bg-slate-900 text-white py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-center md:text-left">
+            <div class="flex flex-col">
+                <span class="text-3xl lg:text-4xl font-serif text-amber-500 mb-2">Free Apply</span>
+                <span style="color:white;" class="text-slate-400 text-[10px] lg:text-xs uppercase tracking-widest font-bold">My Aged Care | 免费申请政府套餐</span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-3xl lg:text-4xl font-serif text-amber-500 mb-2">Multi Care</span>
+                <span style="color:white;" class="text-slate-400 text-[10px] lg:text-xs uppercase tracking-widest font-bold">Nursing & NDIS & Aged Care | 护理与NDIS支持</span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-3xl lg:text-4xl font-serif text-amber-500 mb-2">Community</span>
+                <span style="color:white;" class="text-slate-400 text-[10px] lg:text-xs uppercase tracking-widest font-bold">Social Support | 社交与全能协助</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <div class="section-tag mb-2">Our Pillars | 服务项目</div>
+                <h2 class="text-4xl font-bold italic">Multi Care</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card p-10 bg-white rounded-2xl shadow-sm">
+                    <i data-lucide="clipboard-check" class="w-10 h-10 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Free Application for Government funding</h3>
+                    <p class="text-sm text-slate-500 mb-4">Free assistance in applying for My Aged Home Support packages and buying equipments.</p>
+                    <p class="text-xs font-bold text-slate-900">免费协助申请政府居家支持服务</p>
+                </div>
+                <div class="service-card p-10 bg-white rounded-2xl shadow-sm">
+                    <i data-lucide="calendar-clock" class="w-10 h-10 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Doctor Appointments</h3>
+                    <p class="text-sm text-slate-500 mb-4">We assist with booking doctor visits and provide safe transport/accompaniment.</p>
+                    <p class="text-xs font-bold text-slate-900">协助预约医生、专车接送及全程陪同看诊服务</p>
+                </div>
+                <div class="service-card p-10 bg-white rounded-2xl shadow-sm">
+                    <i data-lucide="shopping-cart" class="w-10 h-10 text-amber-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Social / Household Support (Outing, Cleaning, Gardening, Shopping)</h3>
+                    <p class="text-sm text-slate-500 mb-4">Cleaning, gardening, and shopping support.</p>
+                    <p class="text-xs font-bold text-slate-900">家居清洁、购物及生活琐事支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Why Choose 3L -->
+    <section id="about" class="py-20 lg:py-32 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div class="relative order-2 lg:order-1">
+                <div class="bg-slate-900 p-8 lg:p-12 rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-16 h-16 text-white/5"></i>
+                    <h4 class="text-amber-500 font-bold uppercase tracking-widest text-xs mb-6">Our Promise | 三生承诺</h4>
+                    <p class="text-xl lg:text-2xl font-serif italic mb-8 leading-relaxed">
+                        "We are committed to providing care that feels like family. From applying for your first government grant to maintaining your home, we are with you every step."
+                    </p>
+                    <p class="text-slate-400 text-sm italic mb-8">
+                        “我们致力于提供家一般的呵护。从申请政府补贴到打理您的家园，我们每一步都与您同行。”
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-1 bg-amber-500"></div>
+                        <span class="text-xs font-bold uppercase tracking-widest">Lucy QIU | Managing Director</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-1 lg:order-2">
+                <div class="section-tag mb-6">Specializations | 我们的专长</div>
+                <h2 class="text-3xl lg:text-5xl font-bold mb-8 leading-tight">Focus on <span class="text-amber-600">NDIS (People with disabillity)</span> & Aged Empowerment.</h2>
+                <div class="space-y-6">
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        We specialize in navigating the complex Australian care system so you don't have to. 
+                        <span class="block mt-2 text-base">我们专注于帮助您应对复杂的澳洲护理系统，让您的晚年生活无后顾之忧。</span>
+                    </p>
+                    
+                    <ul class="space-y-4">
+			<!-- NDIS Item -->
+                        <li class="flex items-start gap-4 group">
+                            <div class="mt-1 shrink-0 w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-amber-100">
+                                <i data-lucide="shield-check" class="text-amber-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-slate-900 font-bold block text-xl mb-1">NDIS Registered Care</span>
+                                <span class="text-slate-500 font-medium">NDIS 注册护理服务</span>
+                            </div>
+                        </li>
+
+                        <!-- Aged Care Item -->
+                        <li class="flex items-start gap-4 group">
+                            <div class="mt-1 shrink-0 w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-amber-100">
+                                <i data-lucide="heart-handshake" class="text-amber-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-slate-900 font-bold block text-xl mb-1">My Aged Care Experts</span>
+                                <span class="text-slate-500 font-medium">居家养老专家 - 提供全方位长者支持</span>
+                            </div>
+                        </li>
+                        <!-- Multi-Language Support Item (The one that looked small) -->
+                        <li class="flex items-start gap-4 group">
+                            <div class="mt-1 shrink-0 w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-amber-100">
+                                <i data-lucide="languages" class="text-amber-600 w-6 h-6"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-slate-900 font-bold block text-xl mb-1 leading-snug">
+                                    English and Chinese Support
+                                </span>
+                                <p class="text-slate-500 text-sm mb-2 leading-relaxed">
+                                    Full support in Mandarin, Cantonese, and Hakka dialects.
+                                </p>
+                                <span class="text-amber-700 font-bold text-xs uppercase tracking-wider block">
+                                    英文及中文（普通话，广东话，客家话）多语种支持
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="location" class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-center border-b border-white/10 pb-16">
+                <div>
+                    <h2 class="text-4xl font-serif italic mb-8">Support for your <span class="text-amber-500">Family</span>.</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-5">
+                            <i data-lucide="map-pin" class="text-amber-500"></i>
+                            <div>
+                                <p class="font-bold text-lg">3 / 45 Forest Road, Hurstville</p>
+                                <p class="text-slate-400 text-sm italic">Enter via Lily St | 入口在 Lily St</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <i data-lucide="phone-call" class="text-amber-500"></i>
+                            <div>
+                                <a href="tel:0451572688" class="text-3xl font-bold hover:text-amber-500 transition">0451 572 688</a>
+                                <p class="text-slate-400 text-sm">Lucy QIU (露茜)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden h-[350px] border border-white/10">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.2731876523996!2d151.10872658593748!3d-33.96521579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b995e0766f4f%3A0xea0c7bf192967513!2s45%20Forest%20Rd%2C%20Hurstville%20NSW%202220!5e0!3m2!1sen!2sau!4v1711012000000!5m2!1sen!2sau" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <p class="mt-10 text-center text-[10px] text-slate-500 uppercase tracking-widest font-bold">
+                © 2026 3L MULTICARE PTY LTD 三生护爱 | Serving Sydney, NSW
+            </p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
